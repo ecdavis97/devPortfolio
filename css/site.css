@@ -1,0 +1,168 @@
+:root{
+    --ecd-primary-color: #576d69;
+    --ecd-secondary-color: #e4f9f5;
+    --edc-highlight-color: #baf0e6, .8;
+    --ecd-dark-color: #294533;
+    --ecd-light-color: #ffffff;
+    --ecd-title-color: var(var(--ecd-dark-color));
+
+    --ecd-nav-toggler-glow: rgba(250,250,120,.55);
+    --ecd-nav-toggler-color: var(--edc-highlight-color);
+
+    --ecd-font-size: 1.2rem;
+    --ecd-font-weight: 400;
+    --ecd-line-height: 1.5rem;
+
+    /*----GOOGLE FONTS----*/
+    --ecd-title-font:'Fira Sans', sans-serif;
+    --ecd-body-font: /*choose font*/;
+    --ecd-subtitle-font: /*paste google font here*/;
+    --ecd-heading-font: /*paste google font here*/;
+
+    font-family: 'Fira Sans', sans-serif; /*this is pasted from google fonts*/
+
+}
+
+html,body{
+    height: 100%;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--ecd-title-font);
+    font-size: var(--ecd-font-size);
+    font-weight: var(--ecd-font-weight);
+    line-height: var(--ecd-line-height);
+}
+
+/*----sticky footer setup----*/
+header{
+    margin-top: 74px;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+footer{
+    flex-shrink: 0;
+}
+
+/*----navbar overrides----*/
+#mainNav{
+    background: var(--ecd-dark-color);
+
+}
+
+#mainNav button{
+    border-color: var(--edc-light-color);
+}
+
+.navbar-toggler{
+    color: var(--ecd-primary-color) !important;
+}
+
+.navbar-toggler-icon-ecd{
+    color: var(--ecd-nav-toggler-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*----main header styles----*/
+.mainHeader{
+    background-image: url(/img/PortfolioImages/img/DevPortFolioBG_576.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--ecd-dark-color);
+}
+
+.mainHeader-wrapper{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*----main title styles----*/
+.mainTitle{
+    /*enter font-family with google fonts*/
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.mainLogo{
+    height: .6em;
+}
+
+.subTitle{
+    /*enter font-family with google fonts*/
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: .09rem;
+    color: var(--ecd-hightlight-color);
+}
+
+.profilePic{
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    /* border-color: yellowgreen possible shadow colors can be added*/ 
+    box-shadow: 0px 7px 10px rgba(0,0,0,.5);
+}
+
+
+
+/*----media queries----*/
+@media (min-width: 757.98px){
+
+    .mainHeader{
+        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_767.png);
+        height: 300px;
+    }
+    .mainTitle{
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+    .subTitle{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 300rem;
+        letter-spacing: .1rem;
+    }
+}
+
+@media (min-width: 767.98px){
+
+    .mainHeader{
+        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_992.png);
+        height: 300px;
+    }
+}
+
+@media (min-width: 991.98px){
+    .mainHeader{
+        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_1200.png);
+        height: 400px;
+    }
+}
+
+@media (min-width: 1199.98px){
+    .mainHeader{
+        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_2560.png);
+        height: 500px;
+    }
+    .mainTitle{
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    .subTitle{
+        font-size: 1.7rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
