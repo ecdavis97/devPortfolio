@@ -75,10 +75,10 @@
 
     <!--header area-->
    <header class="container-xxl" id="home">
-    <div class="mainHeader">
+    <div class="mainHeader"> <!--add in "-cover" to become a blurred header-->
         <div class="mainHeader-content h-100 d-flex align-items-center">
-            <div class="mainHeader-wrapper">
-                <div class="mainTitle text-light">Ethan<span><img src="/img/ehtanDavisIcons/ethanDavis_whiteIcon_Edited.svg" class="mainLogo"></span></div>
+            <div class="mainHeader-wrapper p-2">
+                <div class="mainTitle text-light">Ethan<span><img src="#" class="mainLogo"></span></div>
                 <div class="mainTitle text-light">Davis</div>
                 <div class="subTitle text-light">WEB DEVELOPER</div>
                 <a class="btn btn-primary mt-3" href="#contact">CONTACT ME</a>
@@ -94,10 +94,10 @@
         <div class="row">
             <div class="col-12 col-lg-4">
                 <picture>
-                    <source srcset="/img/PortfolioImages/img/dane_profile.jpg" media="(min-width: 991.98px)"/>
-                    <source srcset="/img/PortfolioImages/img/dane_profile_992.jpg" media="(min-width: 767.98px)"/>
-                    <source srcset="/img/PortfolioImages/img/dane_profile_767.jpg" media="(min-width: 575.98px)"/>
-                    <img src="/img/PortfolioImages/img/dane_profile_576.jpg" class="img-fluid profilePic">
+                    <source srcset="/img/dane_profile.jpg" media="(min-width: 991.98px)"/>
+                    <source srcset="/img/dane_profile_992.jpg" media="(min-width: 767.98px)"/>
+                    <source srcset="/img/dane_profile_767.jpg" media="(min-width: 575.98px)"/>
+                    <img src="/img/dane_profile_576.jpg" class="img-fluid profilePic">
                 </picture>
             </div>
             <div class="col-12 col-lg-8">
@@ -129,7 +129,43 @@
         </div>
     </section>
     <section id="skills">
-        <h1>Skills</h1>
+        <div class="row">
+            <div class="col-12">
+            <h1>Skills I Implement</h1>
+            <p>I am a creative problem solver. I build full-stack web and
+                mobile applications. I use C#, SQL, ASP.NET, Javascript,
+                Xamarin, Bootstrap, HTML and CSS. I have highlighted my key
+                technical skills that I will bring to your project.</p>
+            </div>
+        </div>
+        <br>
+        <div class="container bg-light">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="cols-12 cols-md-2 cols-lg-3">
+                <i class="devicon-csharp-plain colored devicons"></i>
+                <p>I use C# on a daily basis to build websites and mobile applications. You can see examples of my work implementing C# in my projects sections.</p>
+            </div>
+            <div class="col">
+                <i class="devicon-dotnetcore-plain devicons"></i>
+                <p>I use proven design patterns and frameworks to build websites. ASP.NET Core Web and MVC fits the bill for most projects. Visit my projects to see examples.</p>
+            </div>
+            <div class="col">
+                <i class="devicon-javascript-plain devicons"></i>
+                <p>Javascript is the language of the web. I use vanilla js and I am comfortable with many js frameworks. Check out my challenges section for some js projects.</p>
+            </div>
+            <div class="col">
+                <span><i class="devicon-html5-plain colored devicons"></i></span>
+                <span><i class="devicon-css3-plain colored devicons"></i></span>
+                <span><i class="devicon-bootstrap-plain colored devicons"></i></span>
+                <p>I use HTML, CSS and Bootstrap to build beautiful, responsive websites. Bootstrap is my go-to CSS framework. Many shy away from front-end. I embrace it.</p>
+            </div>
+            <div class="col">
+                <i class="devicon-postgresql-plain-wordmark colored devicons"></i>
+                <p>SQL is the language of the database. My projects all utilize a database. I have used Postgres on all of them. I can write SQL on any DB platform.</p>
+            </div>
+            <div class="col"></div>
+        </div>
+        </div>
     </section>
     <section id="projects">
         <h1>Projects I've built</h1>

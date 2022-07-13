@@ -50,6 +50,7 @@ main{
 footer{
     flex-shrink: 0;
 }
+/*sticky footer setup END*/
 
 /*----navbar overrides----*/
 #mainNav{
@@ -74,7 +75,7 @@ footer{
 
 /*----main header styles----*/
 .mainHeader{
-    background-image: url(/img/PortfolioImages/img/DevPortFolioBG_576.png);
+    background-image: url(/img/DevPortFolioBG_576.png);
     height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
@@ -97,6 +98,35 @@ footer{
     height: .6em;
 }
 
+.mainHeader{
+    background-image: url(/img/DevPortFolioBG_767.png);
+    height: 300px;
+    color: var(--ecd-dark-color);
+}
+.mainHeader-cover{
+    background-image: url(/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: x;
+    overflow: hidden;
+    color: var(--ecd-light-color);
+}
+
+.mainHeader-cover>.mainHeader-content{
+    backdrop-filter: blur(2px) hue-rotate(260deg) brightness(75%) contrast(90%) saturate(85%);
+    -webkit-backdrop-filter: blur(2px) hue-rotate(260deg) brightness(75%) contrast(90%) saturate(85%);
+}
+
+/*adds in a "blur" overlay if the browser doesn't support the blur function*/
+@supports not (backdrop-filter:blue(3px)){
+    .mainHeader-cover>mainHeader-content{
+        background-color: rgba(0,0,0,.5);
+    }
+}
+
 .subTitle{
     /*enter font-family with google fonts*/
     font-size: .6rem;
@@ -114,15 +144,15 @@ footer{
     box-shadow: 0px 7px 10px rgba(0,0,0,.5);
 }
 
-/*REDO ALL IMAGE PATHWAY LINKS*/
+.devicons{
+    font-size: 4rem;
+}
+
+
 
 /*----media queries----*/
 @media (min-width: 757.98px){
 
-    .mainHeader{
-        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_767.png);
-        height: 300px;
-    }
     .mainTitle{
         font-size: 4.5rem;
         line-height: 3.5rem;
@@ -131,28 +161,28 @@ footer{
         font-size: 1.2rem;
         line-height: 1.5rem;
         font-weight: 300rem;
-        letter-spacing: .1rem;
+        letter-spacing: .09rem;
     }
 }
 
 @media (min-width: 767.98px){
 
     .mainHeader{
-        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_992.png);
+        background-image: url(/img/DevPortFolioBG_992.png);
         height: 300px;
     }
 }
 
 @media (min-width: 991.98px){
     .mainHeader{
-        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_1200.png);
+        background-image: url(/img/DevPortFolioBG_1200.png);
         height: 400px;
     }
 }
 
 @media (min-width: 1199.98px){
     .mainHeader{
-        background-image: url(/img/PortfolioImages/img/DevPortFolioBG_2560.png);
+        background-image: url(/img/DevPortFolioBG_2560.png);
         height: 500px;
     }
     .mainTitle{
