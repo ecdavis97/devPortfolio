@@ -1,9 +1,9 @@
 :root{
     --ecd-primary-color: #576d69;
-    --ecd-secondary-color: #e4f9f5;
+    --ecd-secondary-color: #e4d9c5;
     --edc-highlight-color: #baf0e6, .8;
     --ecd-dark-color: #294533;
-    --ecd-light-color: #ffffff;
+    --ecd-light-color: #998e81;
     --ecd-title-color: var(var(--ecd-dark-color));
 
     --ecd-nav-toggler-glow: rgba(250,250,120,.55);
