@@ -17,6 +17,12 @@
     <!--Dev Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+    <!--Hover Card style sheet-->
+    <link href="/css/hoverCard.css" rel="stylesheet">
+
+    <!--Blog card style sheet-->
+    <link href="/css/blogCard.css" rel="stylesheet">
+
     <!--Custom Stylesheet-->
     <link href="/css/site.css" rel="stylesheet">
 
@@ -31,6 +37,7 @@
 </head>
 
 <body>
+    <div id="home"></div> <!---this just brings the nav all the way to the top of the screen and leaves "home" highlighted--->
    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
        <div class="container-xxl">
            <a class="navbar-brand" href="#">
@@ -47,7 +54,7 @@
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                    <li class="nav-item">
-                       <a class="nav-link active" aria-current="page" href="#">Home</a>
+                       <a class="nav-link active" aria-current="page" href="#home">Home</a>
                    </li>
                    <li class="nav-item">
                        <a class="nav-link" href="#about">About</a>
@@ -78,7 +85,7 @@
     <div class="mainHeader"> <!--add in "-cover" to become a blurred header-->
         <div class="mainHeader-content h-100 d-flex align-items-center">
             <div class="mainHeader-wrapper p-2">
-                <div class="mainTitle text-light">Ethan<span><img src="#" class="mainLogo"></span></div>
+                <div class="mainTitle text-light">Ethan<span><img src="/img/ehtanDavisIcons/ethanDavis_whiteIcon_Edited.svg" class="mainLogo"></span></div>
                 <div class="mainTitle text-light">Davis</div>
                 <div class="subTitle text-light">WEB DEVELOPER</div>
                 <a class="btn btn-primary mt-3" href="#contact">CONTACT ME</a>
@@ -89,7 +96,7 @@
 
     <!--main content area-->
    <main class="container-xxl">
-    <section id="about">
+    <section id="about" class="sction-page">
         <h1>About Me</h1>
         <div class="row">
             <div class="col-12 col-lg-4">
@@ -100,7 +107,7 @@
                     <img src="/img/dane_profile_576.jpg" class="img-fluid profilePic">
                 </picture>
             </div>
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-8 mt-3">
                 <h2>I'm Ethan Davis, A full-stack web dev.</h2>
                 <p>I am a software developer based in the United States. I have been building applications
                     and websites for years. I have been successful in taking a company's idea and bringing it to
@@ -127,13 +134,13 @@
                         </div>
                     </address>
             </div>
-            
         </div>
     </section>
-    <section id="skills">
+
+    <section id="skills" class="section-page">
         <div class="row">
             <div class="col-12">
-            <h1>Skills I Implement</h1>
+            <h1>What I Use</h1>
             <p>I am a creative problem solver. I build full-stack web and
                 mobile applications. I use C#, SQL, ASP.NET, Javascript,
                 Xamarin, Bootstrap, HTML and CSS. I have highlighted my key
@@ -141,7 +148,7 @@
             </div>
         </div>
         <br>
-        <div class="container bg-light">
+        <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             <div class="cols-12 cols-md-2 cols-lg-3">
                 <i class="devicon-csharp-plain colored devicons"></i>
@@ -169,19 +176,326 @@
         </div>
         </div>
     </section>
-    <section id="projects">
-        <h1>Projects I've built</h1>
+
+    <section id="projects" class="section-page">
+        <div class="row">
+            <h1 class="row">Projects I've built</h1>
+            <p>
+                Showcasing complete functional projects demonstrates what I
+                can bring to your project. I built these projects from the
+                ground up to demonstrate skill with front-end, back-end, security
+                and database development. All these projects are full-stack
+                web projects that are published so that you can demo them
+                easily. Contact me to get a complete code walk through.
+            </p>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 gy-5">
+            <div class="col">
+                <div class="hc-wrapper">
+                    <div class="hc-card">
+                        <picture>
+                            <source srcset="/img/logos/BugTracker_600.jpg" media="(min-width: 991.98px)"/>
+                            <img src="/img/logos/BugTracker_200.jpg">
+                        </picture>                    
+                        <div class="hc-content">
+                        <p>A full stack bug tracker built with Asp.net MVS, C# and SQL.</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="hc-wrapper">
+                    <div class="hc-card">
+                        <picture>
+                            <source srcset="/img/logos/ExpenseTracker_600.jpg" media="(min-width: 991.98px)"/>
+                            <img src="/img/logos/ExpenseTracker_200.jpg">
+                        </picture>
+                    <div class="hc-content">
+                        <p>A full stack bug tracker built with Asp.net MVS, C# and SQL.</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="hc-wrapper">
+                    <div class="hc-card">
+                        <picture>
+                            <source srcset="/img/logos/blog_600.jpg" media="(min-width: 991.98px)"/>
+                            <img src="/img/logos/blog_200.jpg">
+                        </picture>
+                        <div class="hc-content">
+                            <p>A full stack bug tracker built with Asp.net MVS, C# and SQL.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="challenges">
-        <h1>Smaller things I have built</h1>
+
+    <section id="challenges" class="section-page">
+        <div class="row">
+            <h1>Smaller things I have built</h1>
+            <p>Coding Challenges are smaller in scope and scale than my full-stack projects. 
+                These problems are fun to solve and also showcase some UI skills and front-end dev skills with javascript. 
+                All the projects are published so you can easily see my work in action. 
+                Contact me if you would like to discuss and of my work.</p>
+        </div>
+            <div class="row row-cols-1 row-cols-lg-3 gy-5">
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/LoanShark_600.png" media="(min-width: 991.98px)"/>
+                                <img src="/img/logos/LoanShark_200.png">
+                            </picture>
+                            <div class="hc-content">
+                            <p>Something about the app that explains breifly how it works.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/tacocat_600.png" media="(min-width: 991.98px)"/>
+                                <img src="/img/logos/tacocat_200.png">
+                            </picture>
+                            <div class="hc-content">
+                            <p>A full stack bug tracker built with Asp.net MVS, C# and SQL.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/tasker_600.png" media="(min-width: 991.98px)"/>
+                                <img src="/img/logos/tasker_200.png">
+                            </picture>
+                            <div class="hc-content">
+                            <p>Something about the app that explains breifly how it works.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/Superdog_600.jpg" media="(min-width: 991.98px)"/>
+                                <img src="/img/logos/Superdog_200.jpg">
+                            </picture>                        
+                        <div class="hc-content">
+                            <p>Something about the app that explains breifly how it works.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/Notary_600.jpg" media="(min-width: 991.98px)"/>
+                                <img src="/img/logos/Notary_200.jpg">
+                            </picture>                        
+                        <div class="hc-content">
+                            <p>Something about the app that explains breifly how it works.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/fizzbuzz_600.jpg" media="(min-width: 991.98px)"/>
+                                <img src="/img/logos/fizzbuzz_200.jpg">
+                            </picture>                        
+                        <div class="hc-content">
+                            <p>Something about the app that explains breifly how it works.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="cta"></section>
-    <section id="blog">
+
+    <section id="cta" class="section-cta d-flex align-items-center justify-content-center">
+        <a href="#" class="cta-arrow linkstyle">
+            <i class="bi bi-arrow-right-square-fill"></i>
+        </a>
+        <span class="px-3 fs-2">Project Highlight: Bugtracker demo today!</span>
+        <a href="#" class="cta-arrow linkstyle">
+            <i class="bi bi-arrow-left-square-fill"></i>
+        </a>
+    </section>
+
+    <section id="blog" class="section-page">
         <h1>Stuff I wrote</h1>
+        <p>Writing about current coding happenings is what keeps my knowledge
+             relevant and helps others to understand my view on the inner workings
+              of different aspects of development.</p>
+        <div class="d-flex flex-column align-items-center align-items-md-start">
+            <article class="card mb-4 blog-article">
+                <div class="row blog-row">
+                    <div class="col-md-4 blog-header">
+                        <a class="blog-image-link" href="#">
+                            <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Flying Girl">
+                        </a>
+                        <div class="blog-date">
+                            <div class="blog-day">11</div>
+                            <div class="blog-month">JULY</div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column justify-content-around">
+                            <h2>Make SQL Queries FLY</h2>
+                            <p class="card-text line-clamp">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                At, dolorum voluptatem, dolor delectus autem aperiam aspernatur 
+                                hic natus sint eum, accusamus ea dolore et modi. Ad voluptas 
+                                expedita animi consectetur.
+                            </p>
+                            <div class="text-start">
+                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Published 3 minutes ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card mb-4 blog-article">
+                <div class="row blog-row">
+                    <div class="col-md-4 blog-header">
+                        <a class="blog-image-link" href="#">
+                            <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="Flying Girl">
+                        </a>
+                        <div class="blog-date">
+                            <div class="blog-day">11</div>
+                            <div class="blog-month">JULY</div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column justify-content-around">
+                            <h2>Make SQL Queries FLY</h2>
+                            <p class="card-text line-clamp">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                At, dolorum voluptatem, dolor delectus autem aperiam aspernatur 
+                                hic natus sint eum, accusamus ea dolore et modi. Ad voluptas 
+                                expedita animi consectetur.
+                            </p>
+                            <div class="text-start">
+                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Published 3 minutes ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card mb-4 blog-article">
+                <div class="row blog-row">
+                    <div class="col-md-4 blog-header">
+                        <a class="blog-image-link" href="#">
+                            <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Flying Girl">
+                        </a>
+                        <div class="blog-date">
+                            <div class="blog-day">11</div>
+                            <div class="blog-month">JULY</div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column justify-content-around">
+                            <h2>Make SQL Queries FLY</h2>
+                            <p class="card-text line-clamp">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                At, dolorum voluptatem, dolor delectus autem aperiam aspernatur 
+                                hic natus sint eum, accusamus ea dolore et modi. Ad voluptas 
+                                expedita animi consectetur.
+                            </p>
+                            <div class="text-start">
+                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Published 3 minutes ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card mb-4 blog-article">
+                <div class="row blog-row">
+                    <div class="col-md-4 blog-header">
+                        <a class="blog-image-link" href="#">
+                            <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Flying Girl">
+                        </a>
+                        <div class="blog-date">
+                            <div class="blog-day">11</div>
+                            <div class="blog-month">JULY</div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column justify-content-around">
+                            <h2>Make SQL Queries FLY</h2>
+                            <p class="card-text line-clamp">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                At, dolorum voluptatem, dolor delectus autem aperiam aspernatur 
+                                hic natus sint eum, accusamus ea dolore et modi. Ad voluptas 
+                                expedita animi consectetur.
+                            </p>
+                            <div class="text-start">
+                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Published 3 minutes ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
-    <section id="contact">
-        <h1>Let's Chat!</h1>
+
+    <section id="contact" class="section-page">
+        <h1 class="text-dark fw-bolder">Let's Chat!</h1>
+        <form>
+            <div class="row text-dark g-2">
+                <div class="col-12 col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" aria-describedby="First Name" placeholder="First Name" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" aria-describedby="Last Name" placeholder="Last Name" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="Email" placeholder="Email" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="phone">Phone (Optional)</label>
+                    <input type="text" class="form-control" id="phone" aria-describedby="Phone" placeholder="Phone">
+                </div>
+                <div class="col-12">
+                    <label for="subject">Phone</label>
+                    <input type="text" class="form-control" id="subject" aria-describedby="Subject" placeholder="Subject" required>
+                </div>
+                <div class="col-12">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" placeholder="Enter a Message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
     </section>
+
    </main>
 
     <!--footer area-->
@@ -193,6 +507,46 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            // Navbar shrink function
+            var navbarShrink = function () {
+                const navbarCollapsible = document.body.querySelector('#mainNav');
+                if (!navbarCollapsible) {
+                    return;
+                }
+                if (window.scrollY === 0) {
+                    navbarCollapsible.classList.remove('navbar-shrink')
+                } else {
+                    navbarCollapsible.classList.add('navbar-shrink')
+                }
+            };
+            // Shrink the navbar 
+            navbarShrink();
+            // Shrink the navbar when page is scrolled
+            document.addEventListener('scroll', navbarShrink);
+            // Activate Bootstrap scrollspy on the main nav element
+            const mainNav = document.body.querySelector('#mainNav');
+            if (mainNav) {
+                new bootstrap.ScrollSpy(document.body, {
+                    target: '#mainNav',
+                    offset: 72,
+                });
+            };
+            // Collapse responsive navbar when toggler is visible
+            const navbarToggler = document.body.querySelector('.navbar-toggler');
+            const responsiveNavItems = [].slice.call(
+                document.querySelectorAll('#navbarResponsive .nav-link')
+            );
+            responsiveNavItems.map(function (responsiveNavItem) {
+                responsiveNavItem.addEventListener('click', () => {
+                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                        navbarToggler.click();
+                    }
+                });
+            });
+        });
     </script>
 </body>
 

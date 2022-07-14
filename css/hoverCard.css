@@ -1,0 +1,90 @@
+/*-----------------------------------------
+Hover cards are 300px x 300 px or 225px by 225px
+Make all hover cards in a group the same size for best results
+Make sure the images are at least 300px by 300px
+Make sure all images are the same size.
+NOTE: We are assuming square images and cards 
+-------------------------------------------*/
+
+:root{
+    --cf-cardRadius: 15px;
+}
+
+.hc-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.hc-card{
+    width: 225px;
+    height: 225px;
+    border-radius: var(--cf-cardRadius);
+    padding: 1.5rem;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: end;
+    transition: .4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0,0,0,.5);
+}
+
+.hc-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--cf-cardRadius);
+}
+
+.hc-card:before{
+    content:"";
+    border-radius: var(--cf-cardRadius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    DISPLAY: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+    transition: .5s;
+    opacity: 0;
+}
+
+.hc-card .hc-content{
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s;
+}
+
+.hc-card .hc-content p{
+    font-size: .9 rem;
+    letter-spacing: 1px;
+    margin-top: .5rem;
+}                    
+
+.hc-card:hover{
+    transform: translateY(20px);
+}
+
+.hc-card:hover:before{
+    opacity: 1;
+}
+
+.hc-card:hover .hc-content{
+    opacity: 1;
+    transform: translateY(0pc);
+}
+
+@media(min-width:1199.98){
+    .hc-card{
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -1,10 +1,10 @@
 :root{
     --ecd-primary-color: #576d69;
     --ecd-secondary-color: #e4d9c5;
-    --edc-highlight-color: #baf0e6, .8;
+    --ecd-highlight-color: #baf0d5;
     --ecd-dark-color: #294533;
-    --ecd-light-color: #998e81;
-    --ecd-title-color: var(var(--ecd-dark-color));
+    --ecd-light-color: #8f8983de;
+    --ecd-title-color: var(--ecd-dark-color);
 
     --ecd-nav-toggler-glow: rgba(250,250,120,.55);
     --ecd-nav-toggler-color: var(--edc-highlight-color);
@@ -16,7 +16,7 @@
     /*----GOOGLE FONTS----*/
     --ecd-title-font:'Fira Sans', sans-serif;
     --ecd-body-font: /*choose font*/;
-    --ecd-subtitle-font: /*paste google font here*/;
+    --ecd-subtitle-font: font-family: 'Dancing Script', cursive;;
     --ecd-heading-font: /*paste google font here*/;
 
     font-family: 'Fira Sans', sans-serif; /*this is pasted from google fonts*/
@@ -36,6 +36,8 @@ body{
     font-size: var(--ecd-font-size);
     font-weight: var(--ecd-font-weight);
     line-height: var(--ecd-line-height);
+    background-color: var(--ecd-primary-color);
+    color: var(--ecd-light-color)
 }
 
 /*----sticky footer setup----*/
@@ -94,8 +96,12 @@ footer{
     line-height: 2rem;
 }
 
+.subTitle{
+    font-family: var(--ecd-subtitle-font);
+}
+
 .mainLogo{
-    height: .6em;
+    height: .55em;
 }
 
 .mainHeader{
@@ -148,6 +154,62 @@ footer{
     font-size: 4rem;
 }
 
+/*----SECTION STYLES----*/
+.section-page{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-page:nth-child(even){
+    background-color: var(--ecd-highlight-color)
+}
+
+.section-page:nth-child(odd){
+    background-color: var(--ecd-light-color);
+    color: var(--ecd-dark-color);
+}
+
+.section-page:nth-last-child(2){
+    background-color: var(--ecd-light-color);
+    color: var(--ecd-dark-color);
+}
+
+.section-page:last-child{
+    background-color: var(--ecd-highlight-color);
+    color: var(--ecd-secondary-color)
+}
+
+.section-cta{
+    background-color: var(--ecd-primary-color);
+    color: var(--ecd-highlight-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right:1rem;
+    text-align: center;
+}
+
+.cta-arrow{
+    color: var(--ecd-dark-color);
+    font-size: 2.5rem;
+}
+
+.linkstyle{
+    text-decoration: none;
+}
+
+/*---------header overrides---------*/
+h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{
+    font-family: var(--ecd-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    leter-spacing: .1rem;
+    color: var(--ecd-dark-color)
+}
+
+/*BRING IN BUTTON OVERRIDES FROM PREVIOUS PROJECT this allows button color changes*/
 
 
 /*----media queries----*/
