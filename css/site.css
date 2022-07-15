@@ -1,12 +1,13 @@
 :root{
-    --ecd-primary-color: #576d69;
-    --ecd-secondary-color: #e4d9c5;
-    --ecd-highlight-color: #baf0d5;
-    --ecd-dark-color: #294533;
-    --ecd-light-color: #8f8983;
+    --ecd-light-color: #CAD2C5;
+    --ecd-primary-color: #3a5a40;
+    --ecd-secondary-color: #a3b18a;
+    --ecd-highlight-color: #acfcbd;
+    --ecd-dark-color: #344e41;
+
     --ecd-title-color: var(--ecd-dark-color);
 
-    --ecd-nav-toggler-glow: rgba(250,250,120,.55);
+    --ecd-nav-toggler-glow: rgba(142, 253, 151, 0.74);
     --ecd-nav-toggler-color: var(--edc-highlight-color);
 
     --ecd-font-size: 1.2rem;
