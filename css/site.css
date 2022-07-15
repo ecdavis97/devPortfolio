@@ -3,7 +3,7 @@
     --ecd-secondary-color: #e4d9c5;
     --ecd-highlight-color: #baf0d5;
     --ecd-dark-color: #294533;
-    --ecd-light-color: #8f8983de;
+    --ecd-light-color: #8f8983;
     --ecd-title-color: var(--ecd-dark-color);
 
     --ecd-nav-toggler-glow: rgba(250,250,120,.55);
@@ -153,6 +153,37 @@ footer{
 .devicons{
     font-size: 4rem;
 }
+
+/*--------FOOTER STYLES--------*/
+.footer-bg-cta{
+    background: linear-gradient(to bottom, var(--ecd-primary-color), var(--ecd-primary-color) 50%, var(--ecd-dark-color) 50%, var(--ecd-dark-color) 100%);
+}
+
+.footer-cta{
+    border-radius: 10px;
+    background-color: var(--ecd-light-color);
+    width: 75%;
+}
+
+.footer-main{
+    background-color: var(--ecd-dark-color);
+    color: var(--ecd-highlight-color);
+}
+
+.socialicons{
+    font-size: 2rem;
+}
+
+a.socialicons{
+    color: var(--ecd-primary-color);
+    opacity: 1;
+}
+
+a.socialicons:hover{
+    color: var(--ecd-highlight-color);
+    opacity: .8;
+}
+
 
 /*----SECTION STYLES----*/
 .section-page{
