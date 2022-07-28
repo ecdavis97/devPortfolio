@@ -1,9 +1,11 @@
 :root{
-    --ecd-light-color: #CAD2C5;
-    --ecd-primary-color: #3a5a40;
-    --ecd-secondary-color: #a3b18a;
-    --ecd-highlight-color: #acfcbd;
-    --ecd-dark-color: #344e41;
+    --ecd-dark-color: #555b6e;
+    --ecd-primary-color: #89b0ae;
+    --ecd-light-color: #bee3db;
+    --ecd-highlight-color: #faf9f9;
+    --ecd-secondary-color: #ffd6ba;
+    
+    
 
     --ecd-title-color: var(--ecd-dark-color);
 
@@ -38,7 +40,7 @@ body{
     font-weight: var(--ecd-font-weight);
     line-height: var(--ecd-line-height);
     background-color: var(--ecd-primary-color);
-    color: var(--ecd-light-color)
+    color: var(--ecd-dark-color)
 }
 
 /*----sticky footer setup----*/
@@ -95,6 +97,7 @@ footer{
     /*enter font-family with google fonts*/
     font-size: 2rem;
     line-height: 2rem;
+    font-family: var(--ecd-title-font);
 }
 
 .subTitle{
@@ -237,7 +240,7 @@ h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{
     font-family: var(--ecd-heading-font);
     font-weight: 700;
     text-transform: uppercase;
-    leter-spacing: .1rem;
+    letter-spacing: .1rem;
     color: var(--ecd-dark-color)
 }
 
