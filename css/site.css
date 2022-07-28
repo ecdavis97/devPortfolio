@@ -1,9 +1,9 @@
 :root{
     --ecd-dark-color: #555b6e;
-    --ecd-primary-color: #89b0ae;
-    --ecd-light-color: #bee3db;
-    --ecd-highlight-color: #faf9f9;
-    --ecd-secondary-color: #ffd6ba;
+    --ecd-primary-color: #89B0AE;
+    --ecd-light-color: #BEE3DB;
+    --ecd-highlight-color: #FAF9F9;
+    --ecd-secondary-color: #FFD6BA;
     
     
 
@@ -17,12 +17,12 @@
     --ecd-line-height: 1.5rem;
 
     /*----GOOGLE FONTS----*/
-    --ecd-title-font:'Fira Sans', sans-serif;
-    --ecd-body-font: /*choose font*/;
-    --ecd-subtitle-font: font-family: 'Dancing Script', cursive;;
-    --ecd-heading-font: /*paste google font here*/;
+    --ecd-title-font: 'Roboto', sans-serif;
+    --ecd-body-font: 'Fira Sans', sans-serif;
+    --ecd-subtitle-font: 'Kanit', sans-serif;
+    /* --ecd-heading-font: /*paste google font here; optional*/
 
-    font-family: 'Fira Sans', sans-serif; /*this is pasted from google fonts*/
+    
 
 }
 
