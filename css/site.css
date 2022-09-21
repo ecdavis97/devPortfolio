@@ -1,295 +1,311 @@
-:root{
-    --ecd-dark-color: #555b6e;
-    --ecd-primary-color: #89B0AE;
-    --ecd-light-color: #BEE3DB;
-    --ecd-highlight-color: #FAF9F9;
-    --ecd-secondary-color: #FFD6BA;
-    
-    
+:root {
+  --ecd-dark-color: #555b6e;
+  --ecd-primary-color: #89b0ae;
+  --ecd-light-color: #bee3db;
+  --ecd-highlight-color: #faf9f9;
+  --ecd-secondary-color: #ffd6ba;
 
-    --ecd-title-color: var(--ecd-dark-color);
+  --ecd-title-color: var(--ecd-dark-color);
 
-    --ecd-nav-toggler-glow: rgba(142, 253, 151, 0.74);
-    --ecd-nav-toggler-color: var(--edc-highlight-color);
+  --ecd-nav-toggler-glow: rgba(142, 253, 151, 0.74);
+  --ecd-nav-toggler-color: var(--edc-highlight-color);
 
-    --ecd-font-size: 1.2rem;
-    --ecd-font-weight: 400;
-    --ecd-line-height: 1.5rem;
+  --ecd-font-size: 1.2rem;
+  --ecd-font-weight: 400;
+  --ecd-line-height: 1.5rem;
 
-    /*----GOOGLE FONTS----*/
-    --ecd-title-font: 'Roboto', sans-serif;
-    --ecd-body-font: 'Fira Sans', sans-serif;
-    --ecd-subtitle-font: 'Kanit', sans-serif;
-    /* --ecd-heading-font: /*paste google font here; optional*/
-
-    
-
+  /*----GOOGLE FONTS----*/
+  --ecd-title-font: "Roboto", sans-serif;
+  --ecd-body-font: "Fira Sans", sans-serif;
+  --ecd-subtitle-font: "Kanit", sans-serif;
+  /* --ecd-heading-font: /*paste google font here; optional*/
 }
 
-html,body{
-    height: 100%;
-
+html,
+body {
+  height: 100%;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
 
-    font-family: var(--ecd-title-font);
-    font-size: var(--ecd-font-size);
-    font-weight: var(--ecd-font-weight);
-    line-height: var(--ecd-line-height);
-    background-color: var(--ecd-primary-color);
-    color: var(--ecd-dark-color)
+  font-family: var(--ecd-title-font);
+  font-size: var(--ecd-font-size);
+  font-weight: var(--ecd-font-weight);
+  line-height: var(--ecd-line-height);
+  background-color: var(--ecd-primary-color);
+  color: var(--ecd-dark-color);
 }
 
 /*----sticky footer setup----*/
-header{
-    margin-top: 74px;
+header {
+  margin-top: 74px;
 }
 
-main{
-    flex: 1 0 auto;
+main {
+  flex: 1 0 auto;
 }
 
-footer{
-    flex-shrink: 0;
+footer {
+  flex-shrink: 0;
 }
 /*sticky footer setup END*/
 
 /*----navbar overrides----*/
-#mainNav{
-    background: var(--ecd-dark-color);
-
+#mainNav {
+  background: var(--ecd-dark-color);
 }
 
-#mainNav button{
-    border-color: var(--edc-light-color);
+#mainNav button {
+  border-color: var(--edc-light-color);
 }
 
-.navbar-toggler{
-    color: var(--ecd-primary-color) !important;
+.navbar-toggler {
+  color: var(--ecd-primary-color) !important;
 }
 
-.navbar-toggler-icon-ecd{
-    color: var(--ecd-nav-toggler-color);
-    font-size: 1.5rem;
-    display: inline-block;
-    vertical-align: middle;
+.navbar-toggler-icon-ecd {
+  color: var(--ecd-nav-toggler-color);
+  font-size: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*----main header styles----*/
-.mainHeader{
-    background-image: url(/img/DevPortFolioBG_576.png);
-    height: 200px;
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-color: var(--ecd-dark-color);
+.mainHeader {
+  background-image: url(/img/DevPortFolioBG_576.png);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--ecd-dark-color);
 }
 
-.mainHeader-wrapper{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.mainHeader-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /*----main title styles----*/
-.mainTitle{
-    /*enter font-family with google fonts*/
-    font-size: 2rem;
-    line-height: 2rem;
-    font-family: var(--ecd-title-font);
+.mainTitle {
+  /*enter font-family with google fonts*/
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: var(--ecd-title-font);
 }
 
-.subTitle{
-    font-family: var(--ecd-subtitle-font);
+.subTitle {
+  font-family: var(--ecd-subtitle-font);
 }
 
-.mainLogo{
-    height: .55em;
+.mainLogo {
+  height: 0.55em;
 }
 
-.mainHeader{
-    background-image: url(/img/DevPortFolioBG_767.png);
-    height: 300px;
-    color: var(--ecd-dark-color);
+.mainHeader {
+  background-image: url(/img/DevPortFolioBG_767.png);
+  height: 300px;
+  color: var(--ecd-dark-color);
 }
-.mainHeader-cover{
-    background-image: url(/img/cityBG_2560.png);
-    background-repeat: no-repeat;
-    min-height: 200px;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: x;
-    overflow: hidden;
-    color: var(--ecd-light-color);
+.mainHeader-cover {
+  background-image: url(/img/cityBG_2560.png);
+  background-repeat: no-repeat;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: x;
+  overflow: hidden;
+  color: var(--ecd-light-color);
 }
 
-.mainHeader-cover>.mainHeader-content{
-    backdrop-filter: blur(2px) hue-rotate(260deg) brightness(75%) contrast(90%) saturate(85%);
-    -webkit-backdrop-filter: blur(2px) hue-rotate(260deg) brightness(75%) contrast(90%) saturate(85%);
+.mainHeader-cover > .mainHeader-content {
+  backdrop-filter: blur(2px) hue-rotate(260deg) brightness(75%) contrast(90%)
+    saturate(85%);
+  -webkit-backdrop-filter: blur(2px) hue-rotate(260deg) brightness(75%)
+    contrast(90%) saturate(85%);
 }
 
 /*adds in a "blur" overlay if the browser doesn't support the blur function*/
-@supports not (backdrop-filter:blue(3px)){
-    .mainHeader-cover>mainHeader-content{
-        background-color: rgba(0,0,0,.5);
-    }
+@supports not (backdrop-filter: blue(3px)) {
+  .mainHeader-cover > mainHeader-content {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
-.subTitle{
-    /*enter font-family with google fonts*/
-    font-size: .6rem;
-    line-height: 1rem;
-    font-weight: 300;
-    letter-spacing: .09rem;
-    color: var(--ecd-hightlight-color);
+.subTitle {
+  /*enter font-family with google fonts*/
+  font-size: 0.6rem;
+  line-height: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.09rem;
+  color: var(--ecd-hightlight-color);
 }
 
-.profilePic{
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1px;
-    /* border-color: yellowgreen possible shadow colors can be added*/ 
-    box-shadow: 0px 7px 10px rgba(0,0,0,.5);
+.profilePic {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  /* border-color: yellowgreen possible shadow colors can be added*/
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
-.devicons{
-    font-size: 4rem;
+.devicons {
+  font-size: 4rem;
 }
 
 /*--------FOOTER STYLES--------*/
-.footer-bg-cta{
-    background: linear-gradient(to bottom, var(--ecd-primary-color), var(--ecd-primary-color) 50%, var(--ecd-dark-color) 50%, var(--ecd-dark-color) 100%);
+.footer-bg-cta {
+  background: linear-gradient(
+    to bottom,
+    var(--ecd-primary-color),
+    var(--ecd-primary-color) 50%,
+    var(--ecd-dark-color) 50%,
+    var(--ecd-dark-color) 100%
+  );
 }
 
-.footer-cta{
-    border-radius: 10px;
-    background-color: var(--ecd-light-color);
-    width: 75%;
+.footer-cta {
+  border-radius: 10px;
+  background-color: var(--ecd-light-color);
+  width: 75%;
 }
 
-.footer-main{
-    background-color: var(--ecd-dark-color);
-    color: var(--ecd-highlight-color);
+.footer-main {
+  background-color: var(--ecd-dark-color);
+  color: var(--ecd-highlight-color);
 }
 
-.socialicons{
-    font-size: 2rem;
+.socialicons {
+  font-size: 2rem;
 }
 
-a.socialicons{
-    color: var(--ecd-primary-color);
-    opacity: 1;
+a.socialicons {
+  color: var(--ecd-primary-color);
+  opacity: 1;
 }
 
-a.socialicons:hover{
-    color: var(--ecd-highlight-color);
-    opacity: .8;
+a.socialicons:hover {
+  color: var(--ecd-highlight-color);
+  opacity: 0.8;
 }
-
 
 /*----SECTION STYLES----*/
-.section-page{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.section-page {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.section-page:nth-child(even){
-    background-color: var(--ecd-highlight-color)
+.section-page:nth-child(even) {
+  background-color: var(--ecd-highlight-color);
 }
 
-.section-page:nth-child(odd){
-    background-color: var(--ecd-light-color);
-    color: var(--ecd-dark-color);
+.section-page:nth-child(odd) {
+  background-color: var(--ecd-light-color);
+  color: var(--ecd-dark-color);
 }
 
-.section-page:nth-last-child(2){
-    background-color: var(--ecd-light-color);
-    color: var(--ecd-dark-color);
+.section-page:nth-last-child(2) {
+  background-color: var(--ecd-light-color);
+  color: var(--ecd-dark-color);
 }
 
-.section-page:last-child{
-    background-color: var(--ecd-highlight-color);
-    color: var(--ecd-secondary-color)
+.section-page:last-child {
+  background-color: var(--ecd-highlight-color);
+  color: var(--ecd-secondary-color);
 }
 
-.section-cta{
-    background-color: var(--ecd-primary-color);
-    color: var(--ecd-highlight-color);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right:1rem;
-    text-align: center;
+.section-cta {
+  background-color: var(--ecd-primary-color);
+  color: var(--ecd-highlight-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
 }
 
-.cta-arrow{
-    color: var(--ecd-dark-color);
-    font-size: 2.5rem;
+.cta-arrow {
+  color: var(--ecd-dark-color);
+  font-size: 2.5rem;
 }
 
-.linkstyle{
-    text-decoration: none;
+.linkstyle {
+  text-decoration: none;
 }
 
 /*---------header overrides---------*/
-h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{
-    font-family: var(--ecd-heading-font);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    color: var(--ecd-dark-color)
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  font-family: var(--ecd-heading-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--ecd-dark-color);
 }
 
 /*BRING IN BUTTON OVERRIDES FROM PREVIOUS PROJECT this allows button color changes*/
 
+.line-clamp{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
 
 /*----media queries----*/
-@media (min-width: 757.98px){
-
-    .mainTitle{
-        font-size: 4.5rem;
-        line-height: 3.5rem;
-    }
-    .subTitle{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        font-weight: 300rem;
-        letter-spacing: .09rem;
-    }
+@media (min-width: 757.98px) {
+  .mainTitle {
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300rem;
+    letter-spacing: 0.09rem;
+  }
 }
 
-@media (min-width: 767.98px){
-
-    .mainHeader{
-        background-image: url(/img/DevPortFolioBG_992.png);
-        height: 300px;
-    }
+@media (min-width: 767.98px) {
+  .mainHeader {
+    background-image: url(/img/DevPortFolioBG_992.png);
+    height: 300px;
+  }
 }
 
-@media (min-width: 991.98px){
-    .mainHeader{
-        background-image: url(/img/DevPortFolioBG_1200.png);
-        height: 400px;
-    }
+@media (min-width: 991.98px) {
+  .mainHeader {
+    background-image: url(/img/DevPortFolioBG_1200.png);
+    height: 400px;
+  }
 }
 
-@media (min-width: 1199.98px){
-    .mainHeader{
-        background-image: url(/img/DevPortFolioBG_2560.png);
-        height: 500px;
-    }
-    .mainTitle{
-        font-size: 6rem;
-        line-height: 5rem;
-    }
-    .subTitle{
-        font-size: 1.7rem;
-        line-height: 1rem;
-        font-weight: 300;
-        letter-spacing: .1rem;
-    }
+@media (min-width: 1199.98px) {
+  .mainHeader {
+    background-image: url(/img/DevPortFolioBG_2560.png);
+    height: 500px;
+  }
+  .mainTitle {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+  .subTitle {
+    font-size: 1.7rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
 }
